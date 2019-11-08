@@ -1,7 +1,9 @@
 __version__ = '1.0.0'
 
+reset = '\033[0m'
+
 text = {
-    'reset': '\033[0m',
+    'reset': reset,
     'black': '\033[30m',
     'red': '\033[31m',
     'green': '\033[32m',
@@ -19,7 +21,7 @@ text = {
 }
 
 background = {
-    'reset': '\033[0m',
+    'reset': reset,
     'black': '\033[40m',
     'red': '\033[41m',
     'green': '\033[42m',
@@ -45,7 +47,7 @@ def colorize(_text):
     for i in background:
         _text = _text.replace('{{bg_' + i + '}}', background[i])
 
-    _text += text['reset']
+    _text += reset
 
     return _text
 

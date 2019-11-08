@@ -1,21 +1,38 @@
-# HostsEditor
-CLI hosts editor for Windows, Linux and Windows Subsystem Linux (WSL) written in Python
-
-**ATTENTION**. Administrator rights are required to work
+# termcolors
+Simple and lightweight package for coloring text in the CLI
 
 # Usage
-### As CLI-command:
-```bash
-hostseditor --help
-```
-### As utils:
-```bash
-hostseditor
+```python
+import termcolors
+
+print(termcolors.text.red + "Red text " + termcolors.background.pink + " on pink bg" + termcolors.reset)
+# or
+print(termcolors.colorize("{{text_red}}Red text {{bg_pink}}on pink bg"))
 ```
 
-# Install (Windows, Linux, WSL)
+# Colors
+Color `reset` resets all previous color settings
+
+Name | Text | Background
+-----|:------:|:-----------:
+black | + | +
+red | + | +
+green | + | +
+yellow | + | +
+blue | + | +
+purple | + | +
+sky | + | +
+gray | + | +
+corral | + | +
+light_green | + | +
+light_yellow | + | +
+pink | + | +
+cyan | + | +
+
+![example](./example.png)
+
+# Install
 Run:
 ```bash
-pip install terminaltables
-pip install git+https://github.com/AlexBrin/HostsEditor
+pip install git+https://github.com/AlexBrin/termcolors
 ```
