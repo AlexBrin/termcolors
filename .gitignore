@@ -1,1 +1,3 @@
 .idea
+__pycache__
+termcolors/__pycache__
